@@ -397,9 +397,9 @@ main {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Playfair Display SC", serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
@@ -407,12 +407,12 @@ main {
   border-radius: 3px;
   transition: 0.5s;
   color: #000000;
-  background: #5c94ed;
+  background: #b8cbea;
 }
 
 #hero .btn-get-started:hover {
   background:  #b8cbea;
-  color: #fff
+  color: #9ab8e8;
 }
 
 #hero .hero-img {
@@ -470,18 +470,22 @@ section {
   margin-bottom: 0;
 }
 
+.section #hero {
+  padding: 0px 0 !important;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about {
   padding: 0;
-  padding-top: 40px;
+  /*padding-top: 40px;*/
   background: transparent !important;
 }
 
 .about .container {
   /*background-color: #f7f8f9;*/
-  padding: 60px 50px;
+  padding: 0px 50px;
 }
 
 @media (max-width: 992px) {
@@ -544,6 +548,24 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+
+.features .container {
+  padding: 0px 125px;
+}
+
+@media (max-width: 992px) {
+  .features .container {
+    padding: 30px;
+  }
+}
+
+.features h3 {
+  font-weight: 400;
+  font-size: 32px;
+  /* padding-left: 75px; */
+  margin-bottom: 12px !important;
+}
+
 .features {
   padding-bottom: 40px;
 }
@@ -556,7 +578,7 @@ section {
   border: 0;
   padding: 20px;
   transition: 0.3s;
-  color: #fff;
+  color: #b8cbea;
   transition: 0.3s ease-in-out;
   border-radius: 20px;
   /*border-left: 4px solid #9ab8e8;*/
@@ -566,32 +588,34 @@ section {
   font-size: 18px;
   font-weight: 600;
   transition: 0.3s ease-in-out;
-  color: #fff;
+  color: #b8cbea;
 }
 
 .features .nav-link p {
   font-size: 14px;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .features .nav-link:hover {
   background: #b8cbea;
+  color:#003651
 }
 
 .features .nav-link:hover h4 {
-  color: #fff;
+  color: #000000;
 }
 
 .features .nav-link.active {
   border-radius: 20px;
   background:  #b8cbea;
-  color: #fff
+  color: #000000
   /*border: 0;
   border-left: 4px solid #b8cbea;*/
 }
 
 .features .nav-link.active h4 {
-  color: #fff;
+  color: #000000;
 }
 
 .features .tab-pane.active {
@@ -610,7 +634,7 @@ section {
   100% {
     opacity: 1;
   }
-}
+} 
 
 /*--------------------------------------------------------------
 # Services
