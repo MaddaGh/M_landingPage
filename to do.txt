@@ -1,4 +1,6 @@
 - fix hero in mobile version (media query)
-- background img as cover not repeating
-- fix peacock scrolling
+- fix card and all the bugs when opening and the scroll to top when closing
+- check browser compatibility
+- index page
+
 
