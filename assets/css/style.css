@@ -39,7 +39,7 @@ h6 {
 }
 
 main {
-  background-color: #9ab8e8;
+  background-color: transparent;
 
 }
 
@@ -47,7 +47,7 @@ main {
   justify-content: space-between;
 }
 /*--------------------------------------------------------------
-# Back to top button
+# Back to top button #9ab8e8
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
@@ -96,7 +96,7 @@ main {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #9ab8e8;
+  background: #1cc62d;
 }
 
 #header.header-scrolled {
@@ -378,7 +378,7 @@ main {
   width: 100%;
   /*margin-top: 70px;*/
   /*padding: 150px 0;*/
-  background: #9ab8e8
+  background: #db8e40
 }
 
 #hero h1 {
@@ -411,8 +411,8 @@ main {
 }
 
 #hero .btn-get-started:hover {
-  background:  #b8cbea;
-  color: #9ab8e8;
+  background:  #3b6cbb;
+  color: #ea5caf;
 }
 
 #hero .hero-img {
@@ -572,13 +572,13 @@ section {
 
 .features .nav-tabs {
   border: 0;
-}
+}u
 
 .features .nav-link {
   border: 0;
   padding: 20px;
   transition: 0.3s;
-  color: #b8cbea;
+  color: #2df41b;
   transition: 0.3s ease-in-out;
   border-radius: 20px;
   /*border-left: 4px solid #9ab8e8;*/
@@ -907,7 +907,7 @@ section {
 .cta {
   /*background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/cta-bg.jpg") center center;
   background-size: cover;*/
-  background: #9ab8e8;
+  background: #dad70b;
   padding: 80px 0;
 }
 
@@ -1041,7 +1041,7 @@ section {
 .team {
  /* background: url("../img/team-bg.jpg") center center no-repeat;
   background-size: cover; */
-  background-color: #9ab8e8;
+  background-color: #df1414;
   padding: 60px 0;
   position: relative;
 }

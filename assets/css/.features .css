@@ -1,0 +1,41 @@
+.features .nav-link p {
+    display: none; /* Hide paragraphs by default */
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: justify; /* Justify text */
+  }
+  
+  .features .nav-link.active p {
+    display: block; /* Show paragraphs when nav-link is active */
+  }
+  
+  .features .nav-link {
+    border: 0;
+    padding: 20px;
+    transition: 0.3s;
+    color: #b8cbea;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .features .nav-link:hover {
+    background: #b8cbea;
+    color: #003651;
+  }
+  
+  .features .nav-link:hover h4 {
+    color: #000000;
+  }
+  
+  .features .nav-link.active {
+    border-radius: 20px;
+    background: #b8cbea;
+    color: #000000;
+  }
+  
+  .features .nav-link.active h4 {
+    color: #000000;
+  }
+  
+  
