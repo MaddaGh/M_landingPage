@@ -1,6 +1,12 @@
-Thanks for downloading this template!
+website <a href="https://maddagh.github.io/M_landingPage/"> here </a>
+
+
+developed from template
 
 Template Name: Techie
+
 Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+
 Author: BootstrapMade.com
+
 License: https://bootstrapmade.com/license/
