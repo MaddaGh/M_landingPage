@@ -851,14 +851,14 @@ p {
 
 .open-content img {
   position: relative;
-  width: 60%;
+  width: 50%;
   margin-left: 3%;
   margin-top: 20px;
   z-index: 5;
 }
 
 .open-content .text {
-  background: #1A3073;
+  background: transparent;
   margin-top: -36%;
   padding: 40% 5% 5% 5%;
   width: 80%;
