@@ -404,12 +404,18 @@ cover.style.transform = 'scaleX('+scaleX+') scaleY('+scaleY+') translate3d('+(of
 
 /* When the close is clicked */
 function onCloseClick() {
+// Store the current scroll position
+var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 // remove the open class so the page content animates out
 openContent.className = openContent.className.replace(' open', '');
 // animate the cover back to the original position card and size
 animateCoverBack(currentCard);
 // animate in other cards
 animateOtherCards(currentCard, false);
+ // Restore the scroll position after animations are done
+ setTimeout(function() {
+  window.scrollTo(0, scrollTop);
+}, 301); // Ensure this timeout matches the timeout in animateCoverBack
 }
 
 function animateOtherCards(card, out) {
