@@ -1,6 +1,7 @@
 - fix hero in mobile version (media query)
-- fix card and all the bugs when opening and the scroll to top when closing
 - check browser compatibility
 - index page
+- add two more cards
+- fix javascript for cards and closing button
 
 
