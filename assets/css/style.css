@@ -806,7 +806,7 @@ p {
 .card h1 {
   position: relative;
   padding: 190px 0px 100px 10px;
-  width: 90%;
+  /*width: 90%;*/
 }
 
 .card > img {
