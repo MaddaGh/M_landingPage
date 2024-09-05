@@ -21,7 +21,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "The seasons";
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686
 }
 
 a {
@@ -53,7 +53,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1A3073;
+  background: /*#1A3073;*/ #005686; 
   width: 40px;
   height: 40px;
   border-radius: 25px;
@@ -68,13 +68,13 @@ h6 {
 
 .back-to-top i:hover {
   font-size: 28px;
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #F2C335;
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .back-to-top.active {
@@ -139,7 +139,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background:#1A3073;
+  background:/*#1A3073;*/ #005686;
   padding: 12px 0;
 }
 
@@ -355,7 +355,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: #1A3073;
+  background: /*#1A3073;*/ #005686;
   transition: 0.3s;
   z-index: 999;
 }
@@ -387,7 +387,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .navbar-mobile a:hover:before,
@@ -399,7 +399,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .navbar-mobile .getstarted,
@@ -468,7 +468,7 @@ h6 {
   font-size: 80px;
   font-weight: 700;
   line-height: 64px;
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
   text-align: right;
   padding-right: 0.5em;
   padding-bottom: 0.3em;
@@ -479,7 +479,7 @@ h6 {
 }
 
 #hero h2 {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
   margin: 10px 0 0 0;
   font-size: 25px;
   text-align: right;
@@ -498,14 +498,14 @@ h6 {
   transition: 0.5s;
   margin-top: 30px;
   color: #F2EFC4;
-  background: linear-gradient(45deg, #1A3073 0%, #4665c3 100%);
+  background: linear-gradient(45deg, /*#1A3073;*/ #005686 0%, #4665c3 100%);
   position: relative;
   left: 22em;
 }
 
 #hero .btn-get-started:hover {
   background: #F2C335;
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 #hero .animated {
@@ -657,7 +657,7 @@ section {
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .about .content ul {
@@ -672,7 +672,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .about .content p:last-child {
@@ -689,13 +689,13 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   color: #F2EFC4;
-  background: linear-gradient(45deg, #1A3073 0%, #4665c3 100%);
+  background: linear-gradient(45deg, /*#1A3073;*/ #005686 0%, #4665c3 100%);
   position: relative;
 }
 
 .about .content .read-more:hover {
   background: linear-gradient(#F2C335 0%, #fbd255 0% );
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .about .content .read-more i {
@@ -793,10 +793,10 @@ p {
   margin-right: auto;
   position: relative;
   background: #EB5160;
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
   cursor: pointer;
   margin-bottom: 60px;
-  border-color: #1A3073;
+  border-color: /*#1A3073;*/ #005686;
   border-radius: 25px;
 }
 
@@ -1000,7 +1000,7 @@ p {
   transition: all ease-in-out 0.3s;
   background: linear-gradient(45deg, #f5efa1 0%, #F2EFC4 100%);
   border: 1px;
-  border-color: #1A3073;
+  border-color: /*#1A3073;*/ #005686;
   border-radius: 5%;
   /* box-shadow: 2px 2px 10px #efcd64fe; */
 }
@@ -1030,7 +1030,7 @@ p {
 
 .services .icon-box .icon svg path {
   transition: 0.5s;
-  fill: #1A3073;
+  fill: /*#1A3073;*/ #005686;
 }
 
 .services .icon-box h4 {
@@ -1040,7 +1040,7 @@ p {
 }
 
 .services .icon-box h4 a {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
   transition: ease-in-out 0.3s;
 }
 
@@ -1048,7 +1048,7 @@ p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
-  color:#1A3073
+  color:/*#1A3073;*/ #005686
 }
 
 .services .icon-box:hover {
@@ -1061,7 +1061,7 @@ p {
 }
 
 .services .iconbox-blue:hover .icon i {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .services .iconbox-blue:hover .icon path {
@@ -1073,7 +1073,7 @@ p {
 }
 
 .services .iconbox-orange:hover .icon i {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .services .iconbox-orange:hover .icon path {
@@ -1085,7 +1085,7 @@ p {
 }
 
 .services .iconbox-pink:hover .icon i {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .services .iconbox-pink:hover .icon path {
@@ -1097,7 +1097,7 @@ p {
 }
 
 .services .iconbox-yellow:hover .icon i {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .services .iconbox-yellow:hover .icon path {
@@ -1109,7 +1109,7 @@ p {
 }
 
 .services .iconbox-red:hover .icon i {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .services .iconbox-red:hover .icon path {
@@ -1121,7 +1121,7 @@ p {
 }
 
 .services .iconbox-teal:hover .icon i {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
 }
 
 .services .iconbox-teal:hover .icon path {
@@ -1645,7 +1645,7 @@ p {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #1A3073;
+  color: /*#1A3073;*/ #005686;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
