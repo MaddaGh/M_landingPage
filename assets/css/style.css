@@ -821,8 +821,9 @@ p {
 .card > img {
   width: 90%;
   position: absolute;
-  top: -3%;
-  /*left: -6%;*/
+  top: 2%;
+  left: 2%;
+  border-radius: 13%;
 }
 
 .card-color-0 {
@@ -840,6 +841,15 @@ p {
 .card-color-3 {
   background-color: #F2EFC4;
 }
+
+.card-color-4 {
+  background-color: #F2EFC4;
+}
+
+.card-color-5 {
+  background-color: #F2EFC4;
+}
+
 
 /* The cover (expanding background) */
 .cover {
