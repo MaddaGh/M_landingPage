@@ -359,13 +359,13 @@ scaleCoverToFillWindow(cardPosition);
 
 // Get the label from the clicked card
 var cardLabel = card.children[1].textContent.trim();
-console.log(cardLabel)
+console.log(cardLabel);
 
 // Initialize paragraphText as an empty string
 var paragraphText = '';
 
 // Function to fetch JSON data and update the paragraphText
-fetch('path/to/your.json')
+fetch('assets/testo.json')
     .then(response => response.json())
     .then(data => {
         // Find the object in the JSON array with the matching label
