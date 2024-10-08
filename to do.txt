@@ -1,7 +1,7 @@
 - fix hero in mobile version (media query)
 - check browser compatibility
 - index page
-- add two more cards
 - fix javascript for cards and closing button
+- the card opens at the current point in the page so the last ones open at the end of the text!
 
 

@@ -273,6 +273,8 @@
 })()
 
 
+// CARDS
+
 // listing vars here so they're in the global scope
 var cards, nCards, cover, openContent, openContentText, pageIsOpen = false,
 openContentImage, closeContent, windowWidth, windowHeight, currentCard;
@@ -347,12 +349,48 @@ function animateCoverUp(card) {
 var cardPosition = card.getBoundingClientRect(); // DOMRect object with values
 // get the style of the clicked card
 var cardStyle = getComputedStyle(card);
+
+//set cover position and color
 setCoverPosition(cardPosition);
 setCoverColor(cardStyle);
+
+// set cover to fill the window
 scaleCoverToFillWindow(cardPosition);
-// update the content of the opened page
-openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText;
+
+// Get the label from the clicked card
+var cardLabel = card.children[1].textContent.trim();
+console.log(cardLabel)
+
+// Initialize paragraphText as an empty string
+var paragraphText = '';
+
+// Function to fetch JSON data and update the paragraphText
+fetch('path/to/your.json')
+    .then(response => response.json())
+    .then(data => {
+        // Find the object in the JSON array with the matching label
+        var matchingArticle = data.find(item => item.label === cardLabel);
+
+        // If a match is found, update the paragraphText with the matching label's value
+        if (matchingArticle) {
+            paragraphText = matchingArticle.label; // Set paragraphText to the label's value
+        } else {
+            // Handle case where no matching label is found
+            console.error('No matching article found for label:', cardLabel);
+            paragraphText = 'Content not found.';
+      }
+
+      // Update the content of the opened page with the paragraphText
+      openContentText.innerHTML = `<h1>${card.children[2].textContent}</h1>${paragraphText}`;
+      })
+      .catch(error => {
+          console.error('Error loading content:', error);
+          openContentText.innerHTML = `<h1>${card.children[2].textContent}</h1><p>Error loading content.</p>`;
+      });
+
+// set the open content image
 openContentImage.src = card.children[1].src;
+
 setTimeout(function() {
 // update the scroll position to 0 (so it is at the top of the 'opened' page)
 //window.scroll(0, 0);
