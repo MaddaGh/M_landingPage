@@ -368,7 +368,7 @@ console.log(cardLabel);
 var paragraphText = '';
 
 // Function to fetch JSON data and update the paragraphText
-fetch('assets/testo.json')
+fetch('https://raw.githubusercontent.com/MaddaGh/M_landingPage/refs/heads/main/assets/testo.json')
     .then(response => response.json())
     .then(data => {
         // Find the object in the JSON array with the matching label
