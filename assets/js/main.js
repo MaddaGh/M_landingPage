@@ -358,6 +358,9 @@ setCoverColor(cardStyle);
 scaleCoverToFillWindow(cardPosition);
 
 // Get the label from the clicked card
+console.log(card.children[1]);
+console.log(card.children[1].textContent);
+console.log(card.children[1].textContent.trim());
 var cardLabel = card.children[1].textContent.trim();
 console.log(cardLabel);
 
