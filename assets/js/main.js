@@ -371,7 +371,7 @@ fetch('https://raw.githubusercontent.com/MaddaGh/M_landingPage/refs/heads/main/a
     .then(data => {
         console.log(data);
         // Find the object in the JSON array with the matching label
-        var matchingArticle = data.find(item => item.label === cardLabel);
+        var matchingArticle = data[cardLabel];
 
         // If a match is found, update the paragraphText with the matching label's value
         if (matchingArticle) {
@@ -379,7 +379,7 @@ fetch('https://raw.githubusercontent.com/MaddaGh/M_landingPage/refs/heads/main/a
         } else {
             // Handle case where no matching label is found
             console.error('No matching article found for label:', cardLabel);
-            paragraphText = 'Content not found.';
+            paragraphText = 'Content not found with label:', cardLabel;
       }
 
       // Update the content of the opened page with the paragraphText
