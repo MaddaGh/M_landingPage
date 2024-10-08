@@ -358,10 +358,10 @@ setCoverColor(cardStyle);
 scaleCoverToFillWindow(cardPosition);
 
 // Get the label from the clicked card
-console.log(card.children[1]);
-console.log(card.children[1].textContent);
-console.log(card.children[1].textContent.trim());
-var cardLabel = card.children[1].textContent.trim();
+console.log(card.children[2]);
+console.log(card.children[2].textContent);
+console.log(card.children[2].textContent.trim());
+var cardLabel = card.children[2].textContent.trim();
 console.log(cardLabel);
 
 // Initialize paragraphText as an empty string
