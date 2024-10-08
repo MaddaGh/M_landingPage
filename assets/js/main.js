@@ -358,11 +358,9 @@ setCoverColor(cardStyle);
 scaleCoverToFillWindow(cardPosition);
 
 // Get the label from the clicked card
-console.log(card.children[2]);
-console.log(card.children[2].textContent);
-console.log(card.children[2].textContent.trim());
+
 var cardLabel = card.children[2].textContent.trim();
-console.log(cardLabel);
+
 
 // Initialize paragraphText as an empty string
 var paragraphText = '';
@@ -371,6 +369,7 @@ var paragraphText = '';
 fetch('https://raw.githubusercontent.com/MaddaGh/M_landingPage/refs/heads/main/assets/testo.json')
     .then(response => response.json())
     .then(data => {
+        console.log(data);
         // Find the object in the JSON array with the matching label
         var matchingArticle = data.find(item => item.label === cardLabel);
 
