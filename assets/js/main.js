@@ -360,6 +360,7 @@ scaleCoverToFillWindow(cardPosition);
 // Get the label from the clicked card
 
 var cardLabel = card.children[2].textContent.trim();
+console.log(cardLabel);
 
 
 // Initialize paragraphText as an empty string
@@ -372,10 +373,11 @@ fetch('https://raw.githubusercontent.com/MaddaGh/M_landingPage/refs/heads/main/a
         console.log(data);
         // Find the object in the JSON array with the matching label
         var matchingArticle = data[cardLabel];
+        console.log(matchingArticle);
 
         // If a match is found, update the paragraphText with the matching label's value
         if (matchingArticle) {
-            paragraphText = matchingArticle.label; // Set paragraphText to the label's value
+            paragraphText = matchingArticle; // Set paragraphText to the label's value
         } else {
             // Handle case where no matching label is found
             console.error('No matching article found for label:', cardLabel);
