@@ -289,7 +289,9 @@ attachListeners();
 // select all the elements in the DOM that are going to be used
 function selectElements() {
 cards = document.getElementsByClassName('card'),
+console.log(cards)
 nCards = cards.length,
+console.log(nCards)
 cover = document.getElementById('cover'),
 openContent = document.getElementById('open-content'),
 openContentText = document.getElementById('open-content-text'),
@@ -311,9 +313,9 @@ window.addEventListener('resize', resize);
 }
 
 function attachListenerToCard(i) {
-cards[i].addEventListener('click', function(e) {
-var card = getCardElement(e.target);
-onCardClick(card, i);
+cards[i].addEventListener('click', function(e) { // the anonymous function function(e) is the event handler for the card click event
+var card = getCardElement(e.target); // refers to the clicked element. This function (not defined in the snippet) likely finds and returns the closest card element if the click happens on a child element
+onCardClick(card, i); // the card and its index
 })
 }
 
@@ -342,7 +344,7 @@ openContent.className += ' open';
 */
 function animateCoverUp(card) {
 // get the position of the clicked card
-var cardPosition = card.getBoundingClientRect();
+var cardPosition = card.getBoundingClientRect(); // DOMRect object with values
 // get the style of the clicked card
 var cardStyle = getComputedStyle(card);
 setCoverPosition(cardPosition);

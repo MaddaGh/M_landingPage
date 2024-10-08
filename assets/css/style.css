@@ -814,7 +814,7 @@ p {
 
 .card h1 {
   position: relative;
-  padding: 190px 0px 100px 10px;
+  padding: 190px 0px 45px 10px;
   /*width: 90%;*/
 }
 
@@ -999,8 +999,8 @@ p {
 #services {
   padding-top: 70px !important;
   font-size: 14px;
-  /*background: linear-gradient(45deg, rgba(242, 239, 196, 0.858) 0%, rgba(242, 239, 196, 0.842) 100%), url("../img/percorsi3.png") center center no-repeat;*/
-  background: url('../img/lines.svg'), rgba(242, 239, 196);
+  background: linear-gradient(45deg, rgba(242, 239, 196, 0.858) 0%, rgba(242, 239, 196, 0.842) 100%), url("../img/background_feathers.jpg") center center no-repeat;
+  /*background: url('../img/bac'), rgba(242, 239, 196);*/
   background-size: cover;
 }
 
