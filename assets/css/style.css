@@ -629,7 +629,7 @@ section {
 Special section for services title
 --------------------------------------------------------------*/
 
-.title {
+#title {
   padding-top: 15em;
   padding-bottom: 15em;
   background-color: #005686;
