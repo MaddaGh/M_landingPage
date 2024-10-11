@@ -649,6 +649,19 @@ Special section for services title
   background-color: #F2EFC4 ;
 }
 
+#presentazione-text-flex {
+  display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 7em;
+}
+
+#presentazione-text-flex p {
+  text-align: justify;
+}
+
 .first {
   padding-top: 1em;
 }
