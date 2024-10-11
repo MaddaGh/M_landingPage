@@ -547,9 +547,9 @@ h6 {
     padding-top: 68px;
   }
 
-  #hero .animated {
+  /*#hero .animated {
     animation: none;
-  }
+  }*/
 
   #hero .hero-img {
     text-align: center;
