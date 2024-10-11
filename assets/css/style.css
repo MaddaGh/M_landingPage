@@ -658,6 +658,12 @@ Special section for services title
     padding-right: 7em;
 }
 
+@media only screen and (max-width: 991px) {
+  #presentazione-text-flex {
+      padding-right: 0em;
+    }
+}
+
 #presentazione-text-flex p {
   text-align: justify;
 }
