@@ -958,7 +958,7 @@ p {
 
 /* The open page content */
 .open-content {
-  /*width: 100%;*/
+  width: 100%;
   z-index: 110;
   position: absolute;
   opacity: 0;
@@ -983,7 +983,7 @@ p {
 }
 
 .open-content .text h1, .open-content .text p {
-  max-width: 700px;
+  /*max-width: 700px;*/
   margin-left: auto;
   margin-right: auto;
 }

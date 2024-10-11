@@ -1,4 +1,5 @@
-- fix hero in mobile version (media query)
+- fix hero in mobile version (media query) + image shape when full desktop screen
+- scroll issue when going to chi sono (material does not appear and you need to scroll more)
 - check browser compatibility
 - index page
 - cards closing button
