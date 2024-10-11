@@ -158,6 +158,13 @@ h6 {
   text-transform: uppercase;
 }
 
+@media (max-width: 991px){
+  #header .logo {
+    font-size: 0px;
+  }
+  
+}
+
 #header .logo a {
   color: #F2EFC4;
 }
@@ -592,6 +599,43 @@ h6 {
   }
 }
 
+/*------------media query for hero responsive--------*/
+
+@media (max-width: 991px) {
+  .text-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  #hero h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    color: /*#1A3073;*/ #005686;
+    text-align: right;
+    margin: 0.5em;
+  }
+
+  .text h1 {
+      margin: 0; /* Remove margins to stack correctly */
+  }
+
+  .text h2 {
+      margin-top: 20px; /* Optional: space between h1 and h2 */
+      width: 100%; /* Ensure it takes the full width */
+  }
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -638,7 +682,11 @@ Special section for services title
   padding-top: 2.5em;
   padding-bottom: 0.5em;
   background-color: #005686;
-  color: #F2EFC4
+  color: #F2EFC4;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 66.5px;
+  z-index: 1;
 }
 
 /*--------------------------------------------------------------
@@ -658,7 +706,7 @@ Special section for services title
     padding-right: 7em;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   #presentazione-text-flex {
       padding-right: 0em;
     }
