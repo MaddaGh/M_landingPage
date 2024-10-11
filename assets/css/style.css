@@ -613,6 +613,14 @@ h6 {
     justify-content: center;
   }
 
+  #hero .img-fluid {
+    padding-right: 0em !important;
+  }
+
+  #hero .text {
+    padding-right: 0em; 
+  }
+
   #hero h1 {
     margin: 0;
     font-size: 40px;
@@ -635,16 +643,8 @@ h6 {
   #hero .btn-get-started {
     left: 0em;
   }
-
- /* .text h1 {
-      margin: 0; 
-  } */
-
-  /*.text h2 {
-      margin-top: 20px; 
-      width: 100%; /
-  }*/
 }
+
 
 
 
