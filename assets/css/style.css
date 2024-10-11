@@ -632,6 +632,10 @@ h6 {
     padding-left: 0.5em;
   }
 
+  #hero .btn-get-started {
+    left: 0em;
+  }
+
  /* .text h1 {
       margin: 0; 
   } */
