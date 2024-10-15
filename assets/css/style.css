@@ -696,8 +696,6 @@ Special section for services title
   padding-bottom: 0.5em;
   background-color: #005686;
   color: #F2EFC4;
-  position: -webkit-sticky;
-  position: sticky;
   top: 66.5px;
   z-index: 1;
 }
@@ -959,16 +957,20 @@ p {
 /* The open page content */
 .open-content {
   width: 100%;
+  height: 100vh;
   z-index: 110;
-  position: absolute;
+  position: fixed; /* Make it fixed to ensure it sticks to the viewport */
+  top: 8em;
+  left:0;
   opacity: 0;
   pointer-events: none;
+  overflow: auto; /* Allows scrolling when content exceeds viewport height */
 }
 
 .open-content img {
   position: relative;
-  width: 50%;
-  margin-left: 3%;
+  width: 20%;
+  margin-left: 10%;
   margin-top: 20px;
   z-index: 5;
 }
@@ -976,10 +978,12 @@ p {
 .open-content .text {
   background: transparent;
   margin-top: -36%;
-  padding: 40% 5% 5% 5%;
+  padding: 37% 5% 5% 5%;
   width: 80%;
   margin-left: 5%;
   margin-bottom: 5%;
+  overflow-y: auto; /* Allow vertical scrolling within the text div if it overflows */
+  font-size: 18px;
 }
 
 .open-content .text h1, .open-content .text p {
@@ -988,6 +992,7 @@ p {
   margin-right: auto;
 }
 
+/*
 .close-content {
   display: block;
   position: absolute;
@@ -1005,14 +1010,38 @@ p {
   position: absolute;
   top: 14px;
 }
+*/
 
+.close-content {
+  font-family: "The seasons";
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: -10%;
+  margin-left: -11.7%;
+  color: #F2EFC4;
+  background: linear-gradient(45deg, /*#1A3073;*/ #005686 0%, #4665c3 100%);
+  position: absolute;
+  left: 22em;
+}
+
+.close-content:hover {
+  background: #F2C335;
+  color: /*#1A3073;*/ #005686;
+}
+
+/*
 .x-1 {
   transform: rotate(45deg);
 }
 
 .x-2 {
   transform: rotate(-45deg);
-}
+} */
 
 /* 
 ** Transitions

@@ -333,6 +333,9 @@ setTimeout(function() {animateCoverUp(currentCard)}, 500);
 animateOtherCards(currentCard, true);
 // add the open class to the page content
 openContent.className += ' open';
+
+// Disable body scroll when content is open
+document.body.style.overflow = 'hidden';
 }
 
 /*
@@ -456,6 +459,10 @@ openContent.className = openContent.className.replace(' open', '');
 animateCoverBack(currentCard);
 // animate in other cards
 animateOtherCards(currentCard, false);
+ // Re-enable body scroll when content is closed
+ document.body.style.overflow = 'auto';
+
+
  // Restore the scroll position after animations are done
  setTimeout(function() {
   window.scrollTo(0, scrollTop);
@@ -504,4 +511,3 @@ windowWidth = window.innerWidth;
 windowHeight = window.innerHeight;
 }
 
-var paragraphText = '<p>Nel Counseling Immaginale l\'anima è il cuore pulsante del nostro essere, una dimensione che comunica attraverso le immagini che riflettono come specchi le nostre esperienze interiori più autentiche\.</p> <p>Ogni immagine è un portale per esplorare il nostro mondo interiore rivelando desideri, paure e aspirazioni che plasmano la nostra esistenza.</p><p>Attraverso il Counseling Immaginale accogliamo il richiamo dell\'anima e ci mettiamo in ascolto delle sue profonde verità, aprendo la porta alla trasformazione interiore.</p><p>Le immagini dell\'anima sono intrecciate con il nostro karma, il tessuto invisibile delle nostre vite passate e presenti. Attraverso il lavoro con queste immagini, possiamo scoprire i legami karmici che plasmano le nostre esperienze attuali, aprendo il cammino verso una maggiore consapevolezza e liberazione.</p><p>Nel tessuto della nostra esistenza si intrecciano i miti personali: racconti simbolici che riflettono le sfide e le opportunità della nostra vita.</p><p>Il mito ci offre una mappa per interpretare il significato più profondo delle nostre esperienze. Nel counseling immaginale esploriamo il mito che mettiamo sulla scena della vita vivendo, scoprendo le connessioni tra le nostre vite individuali e il grande racconto dell\'umanità, trovando significato e saggezza nei simboli e nelle storie che ci guidano.</p><p>Un processo fondamentale nel counseling immaginale è la pacificazione delle immagini, attraverso meditazioni, rituali e regressioni. Mediante il lavoro con gli antenati e quello archetipico con le carte dei Nat possiamo riconoscere e trasformare le immagini che ci causano disagio o conflitto, portandole ad uno stato armonico. Questo percorso ci permette di liberare energie bloccate e di promuovere il benessere psicofisico facilitando una maggiore integrazione delle esperienze emotive.</p><p>Inizia il tuo viaggio di esplorazione e trasformazione. Concediti il dono di vivere intensamente le tue emozioni, di abbracciare il richiamo dell\'anima e di trasformare il tuo karma attraverso il potere delle immagini e dei miti personali.</p><p>';

@@ -2,7 +2,6 @@
 - scroll issue when going to chi sono (material does not appear and you need to scroll more)
 - check browser compatibility
 - index page
-- cards closing button
-- the card opens at the current point in the page so the last ones open at the end of the text!
+- hover delle card to make it clear that they open??
 
 
