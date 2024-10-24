@@ -388,11 +388,11 @@ fetch('https://raw.githubusercontent.com/MaddaGh/M_landingPage/refs/heads/main/a
       }
 
       // Update the content of the opened page with the paragraphText
-      openContentText.innerHTML = `<h1>${card.children[2].textContent}</h1>${paragraphText}`;
+      openContentText.innerHTML = `<h3>${card.children[2].textContent}</h3>${paragraphText}`;
       })
       .catch(error => {
           console.error('Error loading content:', error);
-          openContentText.innerHTML = `<h1>${card.children[2].textContent}</h1><p>Error loading content.</p>`;
+          openContentText.innerHTML = `<h3>${card.children[2].textContent}</h3><p>Error loading content.</p>`;
       });
 
 // set the open content image

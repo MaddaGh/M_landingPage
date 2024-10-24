@@ -15,12 +15,27 @@
   src: url("../fonts/theseasons-reg.otf");
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf")
+}
+
+@font-face {
+  font-family: Radley;
+  src: url("../fonts/Radley-Regular.ttf")
+}
+
+@font-face {
+  font-family: Quote;
+  src: url("../fonts/Arizonia-Regular.ttf")
+}
+
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "The seasons";
+  font-family: "Montserrat";
   color: /*#1A3073;*/ #005686
 }
 
@@ -40,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "The seasons";
+  font-family: "Radley";
 }
 
 .center {
@@ -205,7 +220,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0 3px;
-  font-family: "The seasons";
+  font-family: "Radley";
   font-size: 15px;
   font-weight: 600;
   color: #F2EFC4;
@@ -500,9 +515,9 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "The seasons";
+  font-family: "Radley";
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px;
@@ -512,7 +527,7 @@ h6 {
   color: #F2EFC4;
   background: linear-gradient(45deg, /*#1A3073;*/ #005686 0%, #4665c3 100%);
   position: relative;
-  left: 22em;
+  left: 23.2em;
 }
 
 #hero .btn-get-started:hover {
@@ -647,6 +662,59 @@ h6 {
 
 
 
+/*----------------underlined-------------------*/
+
+.underlined {
+  color: #005686;
+  flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #f2c335b0 0, #f2c335b0 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+}
+
+.underlined--offset {
+  background-position: 0 0.1em;
+  box-shadow: inset 0 -0.5em 0 0 #f6f2e7;
+}
+
+.underlined.active {
+  background-position: 0 0.1em;
+  box-shadow: inset 0 -0.5em 0 0 #f6f2e7;
+  background-size: 100% 100%;
+  color: #005686;
+}
+
+
+.underlined--bg {
+  color: #005686;
+  flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #f2c335b0 0, #f2c335b0 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+}
+
+.underlined--offset--bg {
+  background-position: 0 0.1em;
+  box-shadow: inset 0 -0.5em 0 0 #f2c335b0;
+}
+
+.underlined--bg.active--bg {
+  background-position: 0 0.1em;
+  box-shadow: inset 0 -0.5em 0 0 #f2c335b0;
+  background-size: 100% 100%;
+  color: #444444;
+}
+
+
+
 
 
 /*--------------------------------------------------------------
@@ -714,7 +782,7 @@ Special section for services title
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 7em;
+    padding: 3em;
 }
 
 @media only screen and (max-width: 992px) {
@@ -731,6 +799,14 @@ Special section for services title
   padding-top: 1em;
 }
 
+#second-row {
+  padding-top: 6em;
+}
+
+#second-row #presentazione-text-flex {
+  padding-top: 0%;
+}
+ 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -775,7 +851,7 @@ Special section for services title
 }
 
 .about .content .read-more {
-  font-family: "The seasons";
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -806,6 +882,62 @@ Special section for services title
   height: -webkit-fill-available;
 }
 
+#about .container {
+  height: 400px; /* Adjust the height of the container */
+  position: relative; /* Make sure this div is the positioning context */
+}
+
+/* Style the text */
+.overlay-text2 {
+  position: absolute; /* Position the text over the background */
+  margin-top: 5em;
+  top: 82%; /* Center the text vertically */
+  left: 18%; /* Center the text horizontally */
+  transform: translate(3%, -20%); /* Centering trick using transform */
+  color: #F2EFC4; /* Text color (adjust for contrast) */
+  font-size: 3.5rem; /* Adjust the font size as needed */
+  text-align: center; /* Align the text center */
+  z-index: 10; /* Ensure the text appears above other content */ 
+  font-family: "Quote";
+  text-shadow: 1px 1px #F2C335;}
+
+  .overlay-text2::after {
+    content: "Carl G. Jung"; /* Add the reference */
+    display: block; /* Display it as a block, below the quote */
+    text-align: right; /* Align the reference to the right */
+    font-family: "Radley" !important; /* Make sure the reference is not italic */
+    margin-top: 10px; /* Space between the quote and reference */
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #F2EFC4; /* Lighter text color for the reference */
+    text-shadow: none;
+   
+  }
+
+  .overlay-text1 {
+    position: absolute; /* Position the text over the background */
+    margin-top: 5em;
+    top: 0%; /* Center the text vertically */
+    left: 30%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Centering trick using transform */
+    color: #F2EFC4; /* Text color (adjust for contrast) */
+    font-size: 3.5rem; /* Adjust the font size as needed */
+    text-align: center; /* Align the text center */
+    z-index: 10; /* Ensure the text appears above other content */ 
+    font-family: "Quote";
+    text-shadow: 1px 1px #F2C335;}
+  
+    .overlay-text1::after {
+      content: "Serena C. WIlliams"; /* Add the reference */
+      display: block; /* Display it as a block, below the quote */
+      text-align: right; /* Align the reference to the right */
+      font-family: "Radley" !important; /* Make sure the reference is not italic */
+      margin-top: 10px; /* Space between the quote and reference */
+      font-size: 1rem; /* Slightly smaller font size */
+      color: #F2EFC4; /* Lighter text color for the reference */
+      text-shadow: none;
+     
+    }
+  
 
 /*--------------------------------------------------------------
 # Counts
@@ -882,8 +1014,8 @@ p {
 }
 
 .card {
-  width: 92%;
-  max-width: 340px;
+  width: 105%;
+  /*max-width: 340px;*/
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -893,6 +1025,16 @@ p {
   margin-bottom: 60px;
   border-color: /*#1A3073;*/ #005686;
   border-radius: 25px;
+}
+
+.card {
+  transition: all 0.2s ease-in-out; /* Smooth transition for the hover effect */
+  box-shadow: 0 4px 8px #005686; /* Initial shadow (optional) */
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px #005686, 0 16px 48px #005686;
+  transform: translateY(-5px); /* Lift the card slightly upwards */
 }
 
 .border {
@@ -907,10 +1049,11 @@ p {
   border-radius: 25px;
 }
 
-.card h1 {
+.card h3 {
   position: relative;
-  padding: 190px 0px 45px 10px;
+  padding: 230px 0px 45px 20px;
   /*width: 90%;*/
+  font-size: 2.35rem;
 }
 
 .card > img {
@@ -992,6 +1135,10 @@ p {
   margin-right: auto;
 }
 
+.open-content .text h3 {
+  font-size: 2.75rem !important;
+}
+
 /*
 .close-content {
   display: block;
@@ -1013,7 +1160,7 @@ p {
 */
 
 .close-content {
-  font-family: "The seasons";
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
