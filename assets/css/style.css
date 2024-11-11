@@ -660,8 +660,6 @@ h6 {
   }
 }
 
-
-
 /*----------------underlined-------------------*/
 
 .underlined {
@@ -774,43 +772,105 @@ Special section for services title
 
 .presentazione {
   background-color: #F2EFC4 ;
+  padding: 3em 0
 }
 
 #presentazione-text-flex {
   display: flex;
-    flex-flow: column;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 3em;
+  /*flex-flow: column;
+  flex-wrap: nowrap;*/
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
 }
 
-@media only screen and (max-width: 992px) {
-  #presentazione-text-flex {
-      padding-right: 0em;
-    }
+/* new */ 
+
+.presentazione .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 3em;
 }
+
+#first-row, #second-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em; /* Space between items in rows */
+  padding: 2em 0;
+}
+
+#first-row .col-lg-6, #second-row .col-lg-6 {
+  flex: 1;
+}
+
+/* end new */
+
 
 #presentazione-text-flex p {
   text-align: justify;
+  margin-bottom: 1em; /* Adds spacing between paragraphs */
 }
 
 .first {
   padding-top: 1em;
 }
 
-#second-row {
-  padding-top: 6em;
-}
-
 #second-row #presentazione-text-flex {
   padding-top: 0%;
 }
+
+@media only screen and (max-width: 992px) {
+  #presentazione-text-flex {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #first-row, #second-row {
+    flex-direction: column;
+  }
+  #first-row .col-lg-6, #second-row .col-lg-6 {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #presentazione-text-flex {
+    padding: 1em;
+  }
+  #first-row, #second-row {
+    gap: 1em; /* Adjusts spacing between items for smaller screens */
+    padding: 1em 0;
+  }
+  .presentazione .container {
+    padding: 0 1em; /* Adds side padding to fit smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #presentazione-text-flex h3 {
+    font-size: 1.5rem; /* Reduces heading size for very small screens */
+  }
+  #presentazione-text-flex p {
+    font-size: 0.9rem; /* Reduces paragraph font size for readability */
+  }
+}
+
+/*
+@media only screen and (max-width: 992px) {
+  #presentazione-text-flex {
+      padding-right: 0em;
+    }
+}
+
+#second-row {
+  padding-top: 6em;
+} */
+
  
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about {
+/*.about {
   padding: 0px 0;
   background: url("../img/about.jpg");
   background-attachment: fixed;
@@ -818,8 +878,21 @@ Special section for services title
   background-repeat: no-repeat;
   background-size: cover;  
   height: 100vh;
+}*/
+ 
+.about {
+  padding: 0;
+  background: url("../img/about.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh; /* Flexible height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -2
 }
 
+/*
 .about .content {
   padding: 5em !important;
   background-color: #F2EFC4 ;
@@ -828,7 +901,7 @@ Special section for services title
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
-  color: /*#1A3073;*/ #005686;
+  color: #005686;
 }
 
 .about .content ul {
@@ -843,7 +916,7 @@ Special section for services title
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: /*#1A3073;*/ #005686;
+  color:  #005686;
 }
 
 .about .content p:last-child {
@@ -860,13 +933,13 @@ Special section for services title
   border-radius: 5px;
   transition: 0.5s;
   color: #F2EFC4;
-  background: linear-gradient(45deg, /*#1A3073;*/ #005686 0%, #4665c3 100%);
+  background: linear-gradient(45deg, #005686 0%, #4665c3 100%);
   position: relative;
 }
 
 .about .content .read-more:hover {
   background: linear-gradient(#F2C335 0%, #fbd255 0% );
-  color: /*#1A3073;*/ #005686;
+  color: #005686;
 }
 
 .about .content .read-more i {
@@ -882,62 +955,84 @@ Special section for services title
   height: -webkit-fill-available;
 }
 
+ #about .container {
+  height: 400px; 
+  position: relative; 
+} */
+
 #about .container {
-  height: 400px; /* Adjust the height of the container */
-  position: relative; /* Make sure this div is the positioning context */
+  padding: 1em; /* Adds padding to prevent overflow */
+  position: relative;
+  overflow: hidden; /* Prevents text from spilling out */
+  z-index: 0;
 }
 
-/* Style the text */
-.overlay-text2 {
-  position: absolute; /* Position the text over the background */
-  margin-top: 5em;
-  top: 82%; /* Center the text vertically */
-  left: 18%; /* Center the text horizontally */
-  transform: translate(3%, -20%); /* Centering trick using transform */
-  color: #F2EFC4; /* Text color (adjust for contrast) */
-  font-size: 3.5rem; /* Adjust the font size as needed */
-  text-align: center; /* Align the text center */
-  z-index: 10; /* Ensure the text appears above other content */ 
+/* Default style for large screens */
+.overlay-text1, .overlay-text2 {
+  position: inherit;
+  color: #F2EFC4;
+  font-size: 3.5rem;
+  text-align: center;
+  z-index: 10;
   font-family: "Quote";
-  text-shadow: 1px 1px #F2C335;}
+  text-shadow: 1px 1px #F2C335;
+  max-width: 80%;
+  line-height: 1.2;
+}
 
-  .overlay-text2::after {
-    content: "Carl G. Jung"; /* Add the reference */
-    display: block; /* Display it as a block, below the quote */
-    text-align: right; /* Align the reference to the right */
-    font-family: "Radley" !important; /* Make sure the reference is not italic */
-    margin-top: 10px; /* Space between the quote and reference */
-    font-size: 1rem; /* Slightly smaller font size */
-    color: #F2EFC4; /* Lighter text color for the reference */
-    text-shadow: none;
-   
+.overlay-text1 {
+  top: 20%; /* Adjust vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.overlay-text2 {
+  top: 60%; /* Adjust vertical position */
+  margin-top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.overlay-text1::after, .overlay-text2::after {
+  content: attr(data-author);
+  display: block;
+  text-align: right;
+  font-family: "Radley" !important;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #F2EFC4;
+  text-shadow: none;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1024px) {
+  .overlay-text1, .overlay-text2 {
+    font-size: 3rem;
+    max-width: 90%;
   }
+  .overlay-text1::after, .overlay-text2::after {
+    font-size: 0.9rem;
+  }
+}
 
-  .overlay-text1 {
-    position: absolute; /* Position the text over the background */
-    margin-top: 5em;
-    top: 0%; /* Center the text vertically */
-    left: 30%; /* Center the text horizontally */
-    transform: translate(-50%, -50%); /* Centering trick using transform */
-    color: #F2EFC4; /* Text color (adjust for contrast) */
-    font-size: 3.5rem; /* Adjust the font size as needed */
-    text-align: center; /* Align the text center */
-    z-index: 10; /* Ensure the text appears above other content */ 
-    font-family: "Quote";
-    text-shadow: 1px 1px #F2C335;}
-  
-    .overlay-text1::after {
-      content: "Serena C. WIlliams"; /* Add the reference */
-      display: block; /* Display it as a block, below the quote */
-      text-align: right; /* Align the reference to the right */
-      font-family: "Radley" !important; /* Make sure the reference is not italic */
-      margin-top: 10px; /* Space between the quote and reference */
-      font-size: 1rem; /* Slightly smaller font size */
-      color: #F2EFC4; /* Lighter text color for the reference */
-      text-shadow: none;
-     
-    }
-  
+@media (max-width: 768px) {
+  .overlay-text1, .overlay-text2 {
+    font-size: 2.5rem;
+  }
+  .overlay-text1::after, .overlay-text2::after {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text1, .overlay-text2 {
+    font-size: 1.8rem;
+  }
+  .overlay-text1::after, .overlay-text2::after {
+    font-size: 0.7rem;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Counts
@@ -2118,7 +2213,7 @@ p {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: linear-gradient(45deg, #3679b9 0%, #3c638772 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background: linear-gradient(45deg, #3679b9 0%, #3c638772 100%);
   background-size: cover;
 }
 
