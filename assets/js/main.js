@@ -500,14 +500,17 @@ else return getCardElement(el.parentElement);
 }
 
 // resize function - records the window width and height
-function resize() {
-if (pageIsOpen) {
-// update position of cover
-var cardPosition = currentCard.getBoundingClientRect();
-setCoverPosition(cardPosition);
-scaleCoverToFillWindow(cardPosition);
-}
-windowWidth = window.innerWidth;
-windowHeight = window.innerHeight;
-}
 
+function resize() {
+  if (pageIsOpen) {
+    // update position of cover
+      var cardPosition = currentCard.getBoundingClientRect();
+      setCoverPosition(cardPosition);
+      scaleCoverToFillWindow(cardPosition);
+
+      // Adjust .open-content height if necessary
+      openContent.style.minHeight = window.innerHeight + 'px';
+  }
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
+}
