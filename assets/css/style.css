@@ -1111,6 +1111,14 @@ Special section for services title
 cards
 --------------------------------------------------------------*/
 
+.collapse {
+  transition: width 0.5s ease-in-out; /* Customize the collapse animation */
+}
+
+.collapse.show {
+  display: block; /* Ensure it's visible when shown */
+}
+
 
 /*--------------------------------------------------------------
 # Services

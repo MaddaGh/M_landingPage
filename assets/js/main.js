@@ -272,3 +272,14 @@
 
 })()
 
+document.addEventListener('DOMContentLoaded', () => {
+  const collapseElement = document.querySelector('#collapseWidthExample');
+  const collapseInstance = new bootstrap.Collapse(collapseElement, {
+    toggle: false // Optional: Prevent it from opening by default
+  });
+
+  // Optional: Programmatically toggle the collapse
+  document.querySelector('.btn-primary').addEventListener('click', () => {
+    collapseInstance.toggle();
+  });
+});
