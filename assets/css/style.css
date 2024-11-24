@@ -1103,32 +1103,67 @@ cards
 }
 
 .cards {
-  padding: 11em;
-  background-color: #F2EFC4;
+  padding: 1em 11em 3em 11em;
+  background-color: #005686;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) {
   .cards {
-    padding:5em;
+    padding:0.5em;
   }
 }
 
-@media (max-width: 480px) {
-  .cards {
-    padding:3em;
- }
+.card {
+  background-color: #f2efc4af;
+  border: 0px !important;
+  border-radius: 27px;
+  margin: 0em 2em 2em 2em;
+  max-width: 50%;
 }
 
-.card {
-  background-color: #F2EFC4;
+@media (max-width: 1366px) {
+  .card {
+    max-width: fit-content;
+  }
 }
+
 
 .card-wrapper {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-radius: 27px;
-  border-color: #005686;
+  border-color: #F2C335;
   margin-bottom: 1.5em;
+}
+
+#Counseling-img {
+  background-image: url(../img/counseling_immaginale1.jpeg) !important;
+  background-size: cover;
+}
+
+#Psicogenealogia-img {
+  background-image: url(../img/costellazioni.jpeg) !important;
+  background-size: cover;
+}
+
+#Nat-img {
+  background-image: url(../img/nat1.jpg) !important;
+  background-size: cover;
+}
+
+#Regressioni-img {
+  background-image: url(../img/regressioni.jpeg) !important;
+  background-size: cover;
+}
+
+#Mindfulness-img {
+  background-image: url(../img/mindfulness.png) !important;
+  background-size: cover;
+}
+
+#Yoga-img {
+  background-image: url(../img/yoga_sciamanico.jpg) !important;
+  background-size: cover;
 }
 
 .btn-wrapper {
@@ -1136,7 +1171,8 @@ cards
 }
 
 .btn-wrapper p {
-  padding: 2em;
+  padding: 2em 2em 2em 2em;
+  margin-bottom: 0px !important;
 }
 
 .btn-wrapper img {
@@ -1148,15 +1184,18 @@ cards
   font-weight: 500;
   font-size: 25px;
   letter-spacing: 1px;
-  color: #005686;
+  color: #F2EFC4;
   padding: 10px 28px;
   transition: 0.3s ease;
   text-decoration: none;
-  background-color:#F2EFC4;
+  background:#005686;
+  border-radius: 13px;
+  border-color: #005686 !important;
 }
 
 .btn-primary:hover {
-  text-shadow: 2px 2px 5px #F2C335;
+  color: #005686;
+  background: #F2C335;
 }
 
 
