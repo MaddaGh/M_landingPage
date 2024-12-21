@@ -1,7 +1,7 @@
 - fix hero in mobile version (media query) + image shape when full desktop screen
 - check browser compatibility
 - index page
-- hover delle card to make it clear that they open?? no image in phone
+- first card expand? why?
 
 - find sources images
 - find definitive font
@@ -16,3 +16,6 @@
 
 
 https://www.latterdayhome.com/products/caitlin-connolly-us-with-them-and-them-with-us 
+
+email exits box when in tablet
+I was trying to change background of citation
